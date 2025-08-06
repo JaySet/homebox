@@ -54,7 +54,6 @@ docker run -d \
 HomeBox 的诞生，就是为了解决以上这些问题。你把东西拍照、分门别类录进去，它会帮你生成一份漂亮的清单，还支持到期提醒、搜索和导出，省时又省心。
 
 ## 安装与使用超简单
- 几步搞定，零基础小白也能上手。
     1. 准备数据文件夹
      mkdir -p /path/to/data/folder
      chown 65532:65532 -R /path/to/data/folder
