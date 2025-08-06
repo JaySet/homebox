@@ -53,11 +53,11 @@ docker run -d \
      4. 备：搬家、装修、保险理赔……都需要一个清晰的物品清单。
 HomeBox 的诞生，就是为了解决以上这些问题。你把东西拍照、分门别类录进去，它会帮你生成一份漂亮的清单，还支持到期提醒、搜索和导出，省时又省心。
 
-## 安装与使用超简单
-    1. 准备数据文件夹
-     mkdir -p /path/to/data/folder
-     chown 65532:65532 -R /path/to/data/folder
-    2. 运行 Dockerdocker run -d \
+### 安装与使用超简单
+      1. 准备数据文件夹
+       mkdir -p /path/to/data/folder
+       chown 65532:65532 -R /path/to/data/folder
+      2. 运行 Dockerdocker run -d \
           --name homebox \
           --restart unless-stopped \
           --publish 3100:7745 \
@@ -65,11 +65,11 @@ HomeBox 的诞生，就是为了解决以上这些问题。你把东西拍照、
           --volume /path/to/data/folder/:/data \
            ghcr.io/sysadminsmedia/homebox:latest
            如果想用 rootless 镜像，把镜像名后缀改成 -rootless 就行。
-    3. 访问界面
-      打开浏览器，输入 http://你的服务器IP:3100，就能看到 HomeBox 的 Web 界面。
-    4. 录入物品
-      点“新建物品”，上传照片，填写名称、分类、购买日期、到期日期……保存后，多维度搜索随手可得。
-      整个过程不需要复杂配置、数据库服务器，全靠 SQLite 嵌入式存储，备份只要复制 /data 文件夹。
+      3. 访问界面
+         打开浏览器，输入 http://你的服务器IP:3100，就能看到 HomeBox 的 Web 界面。
+      4. 录入物品
+        点“新建物品”，上传照片，填写名称、分类、购买日期、到期日期……保存后，多维度搜索随手可得。
+        整个过程不需要复杂配置、数据库服务器，全靠 SQLite 嵌入式存储，备份只要复制 /data 文件夹。
 
 ### 优缺点全方位盘点
     优点：
