@@ -63,7 +63,7 @@ HomeBox 的诞生，就是为了解决以上这些问题。你把东西拍照、
           --publish 3100:7745 \
           --env TZ=Asia/Shanghai \
           --volume /path/to/data/folder/:/data \
-           ghcr.io/sysadminsmedia/homebox:latest
+            ghcr.io/sysadminsmedia/homebox:latest
            如果想用 rootless 镜像，把镜像名后缀改成 -rootless 就行。
       3. 访问界面
          打开浏览器，输入 http://你的服务器IP:3100，就能看到 HomeBox 的 Web 界面。
